@@ -3,6 +3,12 @@
 const fp = require('fastify-plugin')
 const msgpack = require('@msgpack/msgpack')
 
+/**
+ * 
+ * @param {FastifyInstance} fastify 
+ * @param {*} options 
+ * @param {*} next 
+ */
 function msgpackSerializerPlugin(fastify, options, next) {
   fastify.register(require('fastify-accepts-serializer'), {
     serializers: [

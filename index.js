@@ -4,25 +4,25 @@ const fp = require('fastify-plugin')
 const msgpack = require('@msgpack/msgpack')
 
 /**
- * 
- * @param {FastifyInstance} fastify 
- * @param {*} options 
- * @param {*} next 
+ *
+ * @param {FastifyInstance} fastify
+ * @param {*} options
+ * @param {*} next
  */
-function fastifyMsgpack(fastify, options, next) {
+function fastifyMsgpack (fastify, options, next) {
   fastify.register(require('fastify-accepts-serializer'), {
     serializers: [
       {
-        regex: /^application\/msgpack$/,
+        regex: /^application\/x-msgpack$/,
         serializer: body => Buffer.from(msgpack.encode(body))
       }
     ],
     default: 'application/json'
   })
 
-  fastify.addContentTypeParser('application/msgpack', {
+  fastify.addContentTypeParser('application/x-msgpack', {
     parseAs: 'buffer'
-  }, async (req, body, done) => {
+  }, (req, body, done) => {
     try {
       const res = msgpack.decode(body)
       return res

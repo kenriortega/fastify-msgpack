@@ -37,7 +37,7 @@ const fastify = require('fastify')({
 })
 
 // custom plugin
-fastify.register(require('./fastify-msgpack'))
+fastify.register(require('fastify-msgpack'))
 
 fastify.post('/decode', (req, reply) => {
     // http POST http://localhost:5000/decode Accept:application/msgpack Content-Type:application/msgpack @msgpack\package-msgpack.dat

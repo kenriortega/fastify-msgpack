@@ -4,7 +4,10 @@
   "description": "A simple fastify-plugin to serialize binary data to msgpack",
   "main": "index.js",
   "scripts": {
-    "lint": "npx standard --fix"
+    "lint": "npx standard --fix",
+    "test": "npm run lint && tap test/test.js",
+    "test:ci": "npm run lint && tap test/test.js --coverage-report=lcovonly",
+    "unit": "tap test/test.js"
   },
   "keywords": [
     "fastify"
@@ -17,6 +20,9 @@
     "fastify-plugin": "^3.0.0"
   },
   "devDependencies": {
-    "standard": "^16.0.3"
+    "fastify": "^3.15.1",
+    "pino-pretty": "^4.8.0",
+    "standard": "^16.0.3",
+    "tap": "^15.0.9"
   }
 }

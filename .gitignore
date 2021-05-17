@@ -1,2 +1,2 @@
 node_modules
-# *-lock.json
+.nyc_output

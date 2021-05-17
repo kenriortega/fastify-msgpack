@@ -1,0 +1,19 @@
+{
+  "name": "fastify-msgpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fastify"
+  ],
+  "author": "kenriortega",
+  "license": "ISC",
+  "dependencies": {
+    "@msgpack/msgpack": "^2.6.3",
+    "fastify-accepts-serializer": "^3.2.0",
+    "fastify-plugin": "^3.0.0"
+  }
+}

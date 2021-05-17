@@ -4,7 +4,7 @@
   "description": "A simple fastify-plugin to serialize binary data to msgpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx standard --fix"
   },
   "keywords": [
     "fastify"
@@ -15,5 +15,8 @@
     "@msgpack/msgpack": "^2.6.3",
     "fastify-accepts-serializer": "^3.2.0",
     "fastify-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "fastify-msgpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple fastify-plugin to serialize binary data to msgpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

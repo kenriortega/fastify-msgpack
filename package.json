@@ -1,6 +1,6 @@
 {
   "name": "fastify-msgpack",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple fastify-plugin to serialize binary data to msgpack",
   "main": "index.js",
   "scripts": {

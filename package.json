@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx standard --fix",
-    "test": "npm run lint && tap test/test.js",
-    "test:ci": "npm run lint && tap test/test.js --coverage-report=lcovonly",
-    "unit": "tap test/test.js"
+    "test": "tap test/test.js"
   },
   "keywords": [
     "fastify"

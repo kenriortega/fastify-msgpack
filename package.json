@@ -7,6 +7,14 @@
     "lint": "npx standard --fix",
     "test": "tap test/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenriortega/fastify-msgpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenriortega/fastify-msgpack/issues"
+  },
+  "homepage": "https://github.com/kenriortega/fastify-msgpack",
   "keywords": [
     "fastify"
   ],

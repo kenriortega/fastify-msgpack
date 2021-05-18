@@ -4,7 +4,7 @@ const t = require('tap')
 const test = t.test
 const plugin = require('../')
 const Fastify = require('fastify')
-const msgpack = require('@msgpack/msgpack')
+
 
 test('serializer', t => {
     t.plan(1)

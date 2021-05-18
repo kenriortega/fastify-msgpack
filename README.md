@@ -14,6 +14,12 @@ $ npm install --save fastify-msgpack
 // or
 $ yarn add fastify-msgpack
 ```
+Test
+----
+```bash
+$ npm test
+
+```
 
 Usage
 -----
